@@ -1,0 +1,87 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .header_container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0px;
+        width: 80%;
+        .header_submenu{
+            border-right: 1px solid #d9d9d9;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 30px;
+            padding-left: 0;
+          
+    li{
+        list-style-type: none;
+        font-family: "Poppins";
+        font-size: 24px;
+        
+    }
+        }
+        .header_swipper{
+            
+            .mySwiper {
+                width: 892px;
+                height: 344px;
+                .swiper-pagination-bullet{
+                    background-color: #d9d9d9;
+                  
+                        height: 12px;
+                        width: 12px;
+                    
+                }
+                .swiper-pagination-bullet-active{
+                    border:2px solid white;
+                    background-color: #db4444;
+                }
+                .col{
+                    background-color: black;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding-left:  100px;
+                    padding-right: 25px;
+                    .swiper-left{
+                       
+                        .swiper-left-top{
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            gap: 20px;
+                            margin-bottom: 20px;
+                            img{
+                                height: 49px;
+                                width: 49px;
+                            }
+                            p{
+                                color: white;
+                                font-family: "Poppins";
+                                text-align: center;
+                            }
+                        }  
+                        .swiper-left-middle{
+                            a{
+                                margin-top: 20px;
+                                color: white;
+                                display: flex;
+                                align-items: center;
+                               gap: 5px;
+                            }
+                        }
+                    }
+                    .swiper_right{
+                        height: 352px;
+                        width: 496px;
+                        position: relative
+                        ;left: 25px;
+                    }
+                }
+              }  
+        }
+    }
+}

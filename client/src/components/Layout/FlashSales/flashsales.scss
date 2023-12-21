@@ -1,0 +1,183 @@
+.flashsales{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .flashsales_container{
+        margin-top: 100px;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        border-bottom: 1px solid  #f5f5f5;
+        // align-items: flex-start;
+        .flashsales_title{
+    .flashsales_title_left{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        .flashsales_todays{
+            display:flex ;
+            align-items: center;
+            gap: 20px;
+            p{
+                font-family: "Poppins";
+                color: #DB4444;
+                font-weight: 500;
+                font-size: 20px;
+            }
+            span{
+                background-color: #DB4444;
+                // width: 20px;
+                // height: 40px;
+                padding: 20px 15px;
+                border-radius: 5px;
+            }
+           
+        }
+        .flashsales_todays_title{
+            display: flex;
+            gap: 150px;
+            align-items: center;
+            h2{
+                font-size: 36px;
+            }
+            .flashsales_ends{
+display: flex;
+align-items: center;
+gap: 50px;
+
+            }
+        }
+    }
+        }
+        .flashsales_products{
+            .flashsale_cards{
+                width: 271px !important;
+                margin-right: 100px !important;
+                
+                .bg-img{
+                    background-color: #f5f5f5;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 5px;
+                    
+                    img{
+                        position: absolute;
+                    }
+                    span{
+                        position: relative;
+                        z-index: 5;
+                        color: white;
+                        background-color: #DB4444;
+                        padding: 10px;
+                        margin-right: 190px;
+                        border-radius: 10px;
+                        margin-bottom: 190px;
+                    }
+                    .addtocard{
+                        position: absolute;
+                        bottom: 106px;
+    padding: 10px;
+    width: 99%;
+    border: none;
+    background-color: black;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    cursor: pointer;
+                    }
+                    .addtowishlist{
+                        position: absolute;
+    right: 12px;
+    top: 16px;
+    border: none;
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.75);
+-webkit-box-shadow: 1px 0px 9px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 0px 9px -3px rgba(0,0,0,0.75);
+display: flex;
+align-items: center;
+justify-content: center;
+transform: translateX(10px);
+opacity: 0;
+visibility: hidden;
+transition: 0.5s;
+cursor: pointer;
+                    }
+                    .seeDetails{
+                        position: absolute;
+                        right: 12px;
+                        top: 60px;
+                        border: none;
+                        cursor: pointer;
+                        background-color: white;
+                        padding: 10px;
+                        border-radius: 50%; 
+                        box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.75);
+                        -webkit-box-shadow: 1px 0px 9px -1px rgba(0,0,0,0.75);
+                        -moz-box-shadow: 1px 0px 9px -3px rgba(0,0,0,0.75);
+                        display: flex;
+align-items: center;
+justify-content: center;
+transform: translateX(10px);
+opacity: 0;
+visibility: hidden;
+transition: 0.5s;
+                    }
+                }
+                .bg-img:hover{
+                    .addtocard{
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                    .seeDetails{
+                        opacity: 1;
+                        visibility: visible;
+                        transform: translateX(0px);
+                    }
+                    .addtowishlist{
+                        opacity: 1;
+                        visibility: visible;
+                        transform: translateX(0px);
+                    }
+                }
+                .flashsale-txt{
+                    padding: 25px 0px;
+                    width: 271px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    .prices{
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+                    }
+                }
+            }
+        }
+        .viewallproducts{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            button{
+                padding: 15px 40px;
+                border: none;
+                background-color:#DB4444;
+                cursor: pointer;
+                color: white;
+                border-radius: 5px;
+                transition: 0.3s;
+                margin-bottom: 50px;
+            }
+            button:hover{
+                background-color: black;
+            }
+        }
+    }
+}

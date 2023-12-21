@@ -1,0 +1,68 @@
+.SignUp{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    img{
+        width: 50%;
+       height: 781px;
+    }
+    .SignUp_container{
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      form{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+input{
+    border: none;
+    border-bottom: 1px solid #bfbfbf;
+    padding: 10px 0px;
+    outline: none;
+    font-size: 16px;
+   
+}
+.CreateAccount{
+    padding: 20px 0px;
+    background-color: #DB4444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.3s;
+}
+.CreateAccount:hover{
+background-color: black;
+}
+.withGoogle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0px;
+    background-color:white;
+    color: black;
+    outline: none;
+    border: 1px solid #bfbfbf;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+      }
+      .Login_txt{
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content:center ;
+        gap: 5px;
+        a{
+          color: black;
+        }
+      }
+    }
+}
