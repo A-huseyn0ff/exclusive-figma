@@ -45,9 +45,9 @@ const ContactPage = () => {
               <input type="email" placeholder='Your Email *'/>
               <input type="password"placeholder='Your Password *' />
             </div>
-            <input type="text"placeholder='Your Massage porno' className='txt_message'/>
+            <input type="text"placeholder='Your Message here' className='txt_message'/>
             <div className='btn_container'>
-  <button className='btn'>Send Massage</button>
+  <button className='btn'>Send Message</button>
 </div>
           </form>
         </div>
