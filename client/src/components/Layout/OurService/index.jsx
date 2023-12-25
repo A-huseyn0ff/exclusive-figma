@@ -6,7 +6,7 @@ import { TbTruckDelivery } from "react-icons/tb";
 import { IoShieldCheckmarkOutline } from "react-icons/io5";
 const OurService = () => {
     const [showButton, setShowButton] = useState(false);
-
+    
   useEffect(() => {
     
     const handleScroll = () => {
@@ -30,6 +30,7 @@ const OurService = () => {
       behavior: 'smooth', 
     });
   };
+ 
   return (
     <>
     <section className='OurServices'>

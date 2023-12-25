@@ -8,6 +8,8 @@ import SignUpPage from './components/Pages/SignUpPage/index'
 import MainLayout from './components/MainLayout/index'
 import Error from './components/Pages/ErrorPage'
 import LoginPage from './components/Pages/LoginPage'
+import Detail from './components/Pages/DetailPage'
+import WishlistPage from './components/Pages/WishlistPage'
 
 const App = () => {
 
@@ -21,6 +23,8 @@ const App = () => {
           <Route path="/contact" element={<ContactPage />} />
           <Route path='/signup' element={<SignUpPage />} />
           <Route path='/login' element={<LoginPage />} />
+          <Route path='/Details' element={<Detail />} />
+          <Route path='/wishlist' element={<WishlistPage />} />
           <Route path='*' element={<Error/>} />
         </Route>
       </Routes>

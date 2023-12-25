@@ -7,10 +7,16 @@ import { IoEyeOutline } from "react-icons/io5";
 // Import Swiper styles
 import "swiper/css";
 import 'swiper/css/navigation';
+import { Link } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import  { wihlsitAdd } from '../../Pages/WishlistPage/wishlistSlice'
 
 
 const FlashSales = () => {
   const [productData, setproductData] = useState([])
+  // const [wishlist, setWishlist] = useState([]);
+  const wishlistArr = useSelector((state) => state.wishlist.value)
+  const dispatch=useDispatch()
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -23,6 +29,7 @@ const FlashSales = () => {
 }
 fetchData()
 },[]);
+
     const calculateTimeLeft = () => {
         const now = new Date();
         const flashSaleEndDate = new Date('2023-12-31T23:59:59'); 
@@ -101,8 +108,17 @@ fetchData()
             <div className='bg-img'style={{width:'270px',height:'250px'}}>
             <span>{item.discountRate}</span>
 <img src={item.image} alt="" style={{width:'210px',height:'180px'}}/>
-<button className='addtowishlist'><FaRegHeart /></button>
-<button className='seeDetails'><IoEyeOutline /></button>
+<button className='addtowishlist'  onClick={()=>dispatch(wihlsitAdd(item))}>
+
+{
+wishlistArr.find(x=>x._id === item._id) ? <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 32 32" fill="none" style={{color:'#DB4444',fill:'#DB4444',borderColor:'#DB4444'}}>
+<path d="M11 7C8.239 7 6 9.216 6 11.95C6 14.157 6.875 19.395 15.488 24.69C15.6423 24.7839 15.8194 24.8335 16 24.8335C16.1806 24.8335 16.3577 24.7839 16.512 24.69C25.125 19.395 26 14.157 26 11.95C26 9.216 23.761 7 21 7C18.239 7 16 10 16 10C16 10 13.761 7 11 7Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style={ {stroke:"#DB4444",fill:'#DB4444',borderColor:'#DB4444'} }/>
+</svg> : <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 32 32" fill="none" style={{color:'black'}}>
+<path d="M11 7C8.239 7 6 9.216 6 11.95C6 14.157 6.875 19.395 15.488 24.69C15.6423 24.7839 15.8194 24.8335 16 24.8335C16.1806 24.8335 16.3577 24.7839 16.512 24.69C25.125 19.395 26 14.157 26 11.95C26 9.216 23.761 7 21 7C18.239 7 16 10 16 10C16 10 13.761 7 11 7Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style={ {stroke:"black",fill:'white',borderColor:'black'} }/>
+</svg> 
+}
+</button>
+<Link to={'/Details'} className='seeDetails'><IoEyeOutline /></Link>
 <button className='addtocard'>Add to card</button>
 </div>
 
